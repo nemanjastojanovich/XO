@@ -5,18 +5,20 @@
   height: 100%;
 }
 
-#container {
-  height: 100%;
+body {
+  padding: 60px;
+  background-color: #2196F3;
 }
-#container #table {
+body #container {
+  margin: 0 auto;
+}
+body #container #table {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: #2196F3;
   padding: 10px;
-  gap: 10px;
-  height: 100%;
+  gap: 20px;
 }
-#container #table .fields {
+body #container #table .fields {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
@@ -31,9 +33,9 @@
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
   transition-property: transform;
 }
-#container #table .fields:hover, #container #table .fields:focus, #container #table .fields:active {
+body #container #table .fields:hover, body #container #table .fields:focus, body #container #table .fields:active {
   transform: scale(0.95);
 }/*# sourceMappingURL=main.css.map */
