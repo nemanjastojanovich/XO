@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container {
+  height: 100%;
+}
+#container #table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #2196F3;
+  padding: 10px;
+  gap: 10px;
+  height: 100%;
+}
+#container #table .fields {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+#container #table .fields:hover, #container #table .fields:focus, #container #table .fields:active {
+  transform: scale(0.95);
+}/*# sourceMappingURL=main.css.map */
